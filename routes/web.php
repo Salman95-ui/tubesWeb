@@ -21,3 +21,5 @@ Route::get('/data' , function (){
         "nama" => "salman"
     ]) ;
 });
+
+Route::get('/utama' , 'main@utama');
