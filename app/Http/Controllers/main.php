@@ -10,4 +10,8 @@ class main extends Controller
     public function utama(){
     	return view('utama') ;
     }
+
+    public function buat(){
+    	return view('buat') ;
+    }
 }

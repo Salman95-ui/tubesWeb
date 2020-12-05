@@ -23,3 +23,5 @@ Route::get('/data' , function (){
 });
 
 Route::get('/utama' , 'main@utama');
+
+Route::get('/buat' , 'main@buat') ;
