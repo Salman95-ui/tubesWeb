@@ -14,4 +14,9 @@ class main extends Controller
     public function buat(){
     	return view('buat') ;
     }
+
+    public function detail(){
+    	return view('detail');
+    }
+    
 }
