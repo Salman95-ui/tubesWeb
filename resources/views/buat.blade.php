@@ -12,9 +12,13 @@
 			<p>Buat Laporan/Komentar</p>
 			<hr>
 			
-			<textarea>Laporan/Komentar</textarea>
+			<form action="/utama" method="get" enctype="multipart/form-data" onsubmit="return validation()">
+				{{csrf_field()}}
+			<textarea name="komentar" id="komentar">Laporan/Komentar</textarea>
 			
-			<select >
+			<p id="errComm"></p>
+			
+			<select id="aspek" name="aspek">
 				<option selected value="">Pilih Aspek Pelaporan/Komentar</option>
 				<option value="Dosen">Dosen</option>
 				<option value="Staff">Staff</option>
@@ -23,13 +27,19 @@
 				<option value="Pengajaran">Pengajaran</option>
 			</select>
 
+			<p id="errAspek"></p>
+
 			<input type="file" style="padding: 15px;" name="">
+
 			<div class="tombol">
-			<button type="submit">Buat Lapor!</button>
+			<button type="submit"  onclick="test()">Buat Lapor!</button>
 			</div>
 
 			<hr>
+			</form>
 	</div>
 </div>
+
+<script src="/js/buat.js"></script>
 </body>
 </html>
