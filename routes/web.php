@@ -15,15 +15,3 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/data' , function (){
-
-    return response()->json([
-        "nama" => "salman"
-    ]) ;
-});
-
-Route::get('/utama' , 'main@utama');
-
-Route::get('/buat' , 'main@buat') ;
-
-Route::get('/detail' , 'main@detail') ;
